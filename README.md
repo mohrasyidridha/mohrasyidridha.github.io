@@ -9,5 +9,5 @@ mohrasyidridha/
 ├── images/
 │   └── profil.jpg
 │
-└── cv/
+└── assets/
     └── CV-Moh-Rasyid-Ridha.pdf
