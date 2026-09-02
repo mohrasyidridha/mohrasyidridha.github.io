@@ -10,4 +10,9 @@ mohrasyidridha/
 │   └── profil.jpg
 │
 └── assets/
-    └── CV-Moh-Rasyid-Ridha.pdf
+    ├── CV_Moh_Rasyid_Ridha.pdf
+    └── certificates/
+        ├── young-building-maintenance-expert-2024.pdf
+        ├── general-k3-2019.pdf
+        ├── automatic-air-conditioner-control-2019.pdf
+        └── national-seminar-2017.pdf
