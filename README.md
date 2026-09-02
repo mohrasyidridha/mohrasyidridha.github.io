@@ -7,7 +7,12 @@ mohrasyidridha/
 ├── script.js
 │
 ├── images/
-│   └── profil.jpg
+│   ├── profil.jpg
+│   │
+│   └── projects/
+│       ├── pid-water-level.jpg
+│       ├── elevator-system.jpg
+│       └── sorting-station.jpg
 │
 └── assets/
     ├── CV_Moh_Rasyid_Ridha.pdf
