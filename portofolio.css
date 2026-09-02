@@ -1299,6 +1299,49 @@ section:not(.hero) {
 }
 
 
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.experience-item {
+    position: relative;
+}
+
+.experience-period small {
+    display: block;
+    margin-top: 5px;
+    color: var(--accent);
+    font-family: var(--mono);
+    font-size: 9px;
+}
+
+.experience-location {
+    margin-top: 7px;
+    color: var(--text-light);
+    font-family: var(--mono);
+    font-size: 10px;
+}
+
+.experience-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+}
+
+.experience-tools span {
+    padding: 6px 9px;
+    border: 1px solid var(--border);
+    color: var(--text-soft);
+    font-family: var(--mono);
+    font-size: 9px;
+}
+
+
 /* =========================================================
    EXPERIENCE PERIOD
 ========================================================= */
@@ -2519,6 +2562,32 @@ footer p {
         grid-template-columns: 1fr;
 
     }
+
+
+     /* EXPERIENCE MOBILE */
+    @media (max-width: 700px) {
+
+    .experience-timeline {
+        gap: 35px;
+    }
+
+    .experience-item {
+        gap: 12px;
+    }
+
+    .experience-period {
+        padding-bottom: 5px;
+    }
+
+    .experience-period strong {
+        font-size: 15px;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
+
+}
 
 
     /* PROJECTS */
