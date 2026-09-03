@@ -3,36 +3,53 @@
 
 <head>
 
+    <!-- =====================================================
+         META & PAGE INFORMATION
+    ====================================================== -->
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <meta name="description"
-          content="Moh Rasyid Ridha - Electrical Engineer specializing in industrial automation, PLC programming, machine troubleshooting and engineering design.">
+    <meta
+        name="description"
+        content="Moh Rasyid Ridha - Electrical Engineer specializing in industrial automation, PLC programming, machine troubleshooting and engineering design."
+    >
 
-    <meta name="author"
-          content="Moh Rasyid Ridha">
+    <meta
+        name="author"
+        content="Moh Rasyid Ridha"
+    >
 
-    <title>Moh Rasyid Ridha | Electrical & Automation Engineer</title>
-
-
-    <!-- CSS -->
-
-    <link rel="stylesheet"
-          href="portofolio.css">
+    <title>
+        Moh Rasyid Ridha | Electrical & Automation Engineer
+    </title>
 
 
-    <!-- AOS -->
+    <!-- =====================================================
+         STYLESHEETS
+    ====================================================== -->
 
-    <link rel="stylesheet"
-          href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="portofolio.css"
+    >
 
+    <!-- AOS Animation -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+    >
 
     <!-- Font Awesome -->
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
 
 </head>
 
@@ -41,7 +58,7 @@
 
 
 <!-- =====================================================
-     HEADER
+     HEADER & NAVIGATION
 ===================================================== -->
 
 <header class="main-header">
@@ -50,8 +67,10 @@
 
         <!-- LOGO -->
 
-        <a href="#home"
-           class="logo">
+        <a
+            href="#home"
+            class="logo"
+        >
 
             <span class="logo-icon">
                 <i class="fa-solid fa-microchip"></i>
@@ -64,55 +83,72 @@
         </a>
 
 
-        <!-- NAVIGATION -->
+        <!-- DESKTOP / MOBILE NAVIGATION -->
 
-        <ul class="nav-menu">
+        <ul
+            class="nav-menu"
+            id="primary-navigation"
+        >
 
             <li>
-                <a href="#home"
-                   class="nav-link active">
+                <a
+                    href="#home"
+                    class="nav-link active"
+                >
                     Home
                 </a>
             </li>
 
             <li>
-                <a href="#about"
-                   class="nav-link">
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
                     About
                 </a>
             </li>
 
             <li>
-                <a href="#skills"
-                   class="nav-link">
+                <a
+                    href="#skills"
+                    class="nav-link"
+                >
                     Skills
                 </a>
             </li>
 
             <li>
-                <a href="#experience"
-                   class="nav-link">
+                <a
+                    href="#experience"
+                    class="nav-link"
+                >
                     Experience
                 </a>
             </li>
 
             <li>
-                <a href="#certificates" 
-                class="nav-link">
-                Certificates
+                <a
+                    href="#certificates"
+                    class="nav-link"
+                >
+                    Certificates
                 </a>
             </li>
 
             <li>
-                <a href="#projects"
-                   class="nav-link">
+                <a
+                    href="#projects"
+                    class="nav-link"
+                >
                     Projects
                 </a>
             </li>
 
             <li>
-                <a href="#contact"
-                   class="nav-link">
+                <a
+                    href="#contact"
+                    class="nav-link"
+                >
                     Contact
                 </a>
             </li>
@@ -120,10 +156,14 @@
         </ul>
 
 
-        <!-- MOBILE MENU -->
+        <!-- MOBILE MENU BUTTON -->
 
-        <button class="menu-toggle"
-                aria-label="Open navigation menu">
+        <button
+            class="menu-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+        >
 
             <i class="fa-solid fa-bars"></i>
 
@@ -136,24 +176,38 @@
 
 
 <!-- =====================================================
-     HOME
+     HOME / HERO SECTION
 ===================================================== -->
 
-<section id="home"
-         class="hero">
+<section
+    id="home"
+    class="hero"
+>
 
 
-    <!-- BACKGROUND -->
+    <!-- HERO BACKGROUND -->
 
     <div class="hero-background">
 
+        <!-- Large Gear -->
+
         <div class="gear gear-large">
+
             <i class="fa-solid fa-gear"></i>
+
         </div>
 
+
+        <!-- Medium Gear -->
+
         <div class="gear gear-medium">
+
             <i class="fa-solid fa-gear"></i>
+
         </div>
+
+
+        <!-- Circuit Decoration -->
 
         <div class="circuit circuit-1">
 
@@ -172,32 +226,40 @@
 
     <!-- HERO CONTENT -->
 
-    <div class="hero-content"
-         data-aos="fade-up">
+    <div
+        class="hero-content"
+        data-aos="fade-up"
+    >
 
 
-        <!-- PROFILE -->
+        <!-- PROFILE PHOTO -->
 
         <div class="profile-wrapper">
 
-            <img src="images/profil.jpg"
-                 class="profile"
-                 alt="Moh Rasyid Ridha">
+            <img
+                src="images/profil.jpg"
+                class="profile"
+                alt="Moh Rasyid Ridha"
+            >
 
         </div>
 
 
-        <!-- INTRO -->
+        <!-- PROFESSIONAL TITLE -->
 
         <p class="welcome">
             Electrical & Automation Engineer
         </p>
 
 
+        <!-- NAME -->
+
         <h1 class="hero-name">
             Moh Rasyid Ridha, S.T.
         </h1>
 
+
+        <!-- EDUCATION -->
 
         <div class="education">
 
@@ -212,7 +274,7 @@
         </div>
 
 
-        <!-- DESCRIPTION -->
+        <!-- PROFESSIONAL DESCRIPTION -->
 
         <p class="description">
 
@@ -223,13 +285,17 @@
         </p>
 
 
-        <!-- BUTTON -->
+        <!-- HERO BUTTONS -->
 
         <div class="hero-btn">
 
-            <a href="assets/CV_Moh_Rasyid_Ridha.pdf"
-               class="btn"
-               download>
+            <!-- Download CV -->
+
+            <a
+                href="assets/CV_Moh_Rasyid_Ridha.pdf"
+                class="btn"
+                download
+            >
 
                 <i class="fa-solid fa-download"></i>
 
@@ -238,8 +304,12 @@
             </a>
 
 
-            <a href="#projects"
-               class="btn btn-outline">
+            <!-- View Projects -->
+
+            <a
+                href="#projects"
+                class="btn btn-outline"
+            >
 
                 <i class="fa-solid fa-arrow-down"></i>
 
@@ -252,7 +322,7 @@
     </div>
 
 
-    <!-- SCROLL -->
+    <!-- SCROLL INDICATOR -->
 
     <div class="scroll-down">
 
@@ -269,21 +339,23 @@
 
 
 <!-- =====================================================
-     ABOUT
+     ABOUT SECTION
 ===================================================== -->
 
-<section id="about"
-         class="about-section">
-
+<section
+    id="about"
+    class="about-section"
+>
 
     <div class="about-container">
 
 
-        <!-- VISUAL -->
+        <!-- ABOUT VISUAL -->
 
-        <div class="about-visual"
-             data-aos="fade-right">
-
+        <div
+            class="about-visual"
+            data-aos="fade-right"
+        >
 
             <div class="engineering-visual">
 
@@ -310,12 +382,14 @@
                 </div>
 
 
-                <!-- CIRCUIT -->
+                <!-- CIRCUIT DECORATION -->
 
                 <div class="about-circuit circuit-top"></div>
 
                 <div class="about-circuit circuit-bottom"></div>
 
+
+                <!-- TECHNICAL DOTS -->
 
                 <span class="technical-dot dot-1"></span>
 
@@ -326,12 +400,12 @@
         </div>
 
 
+        <!-- ABOUT CONTENT -->
 
-        <!-- CONTENT -->
-
-        <div class="about-content"
-             data-aos="fade-left">
-
+        <div
+            class="about-content"
+            data-aos="fade-left"
+        >
 
             <p class="section-label">
                 ABOUT ME
@@ -347,6 +421,8 @@
 
             <div class="about-line"></div>
 
+
+            <!-- ABOUT DESCRIPTION -->
 
             <p class="about-text">
 
@@ -381,6 +457,8 @@
             <div class="about-focus">
 
 
+                <!-- INDUSTRIAL AUTOMATION -->
+
                 <div class="focus-item">
 
                     <i class="fa-solid fa-microchip"></i>
@@ -400,6 +478,8 @@
                 </div>
 
 
+                <!-- MACHINE TROUBLESHOOTING -->
+
                 <div class="focus-item">
 
                     <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -418,6 +498,8 @@
 
                 </div>
 
+
+                <!-- ENGINEERING DESIGN -->
 
                 <div class="focus-item">
 
@@ -439,7 +521,6 @@
 
             </div>
 
-
         </div>
 
     </div>
@@ -449,17 +530,21 @@
 
 
 <!-- =====================================================
-     SKILLS
+     SKILLS SECTION
 ===================================================== -->
 
-<section id="skills"
-         class="skills-section">
+<section
+    id="skills"
+    class="skills-section"
+>
 
 
-    <!-- HEADER -->
+    <!-- SKILLS HEADER -->
 
-    <div class="skills-title"
-         data-aos="fade-up">
+    <div
+        class="skills-title"
+        data-aos="fade-up"
+    >
 
         <span>
             TECHNICAL SKILLS
@@ -479,24 +564,23 @@
     </div>
 
 
-
-    <!-- SKILL GRID -->
+    <!-- SKILLS GRID -->
 
     <div class="skills-grid">
 
 
-        <!-- AUTOMATION -->
+        <!-- SKILL 01 — INDUSTRIAL AUTOMATION -->
 
-        <div class="skill-card"
-             data-aos="fade-up">
-
+        <div
+            class="skill-card"
+            data-aos="fade-up"
+        >
 
             <div class="skill-card-icon">
 
                 <i class="fa-solid fa-microchip"></i>
 
             </div>
-
 
             <div class="skill-card-content">
 
@@ -516,17 +600,12 @@
 
                 </p>
 
-
                 <div class="skill-tags">
 
                     <span>Siemens PLC</span>
-
                     <span>TIA Portal</span>
-
                     <span>HMI</span>
-
                     <span>VFD</span>
-
                     <span>Ladder Logic</span>
 
                 </div>
@@ -536,20 +615,19 @@
         </div>
 
 
+        <!-- SKILL 02 — MAINTENANCE -->
 
-        <!-- MAINTENANCE -->
-
-        <div class="skill-card"
-             data-aos="fade-up"
-             data-aos-delay="100">
-
+        <div
+            class="skill-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+        >
 
             <div class="skill-card-icon">
 
                 <i class="fa-solid fa-screwdriver-wrench"></i>
 
             </div>
-
 
             <div class="skill-card-content">
 
@@ -564,21 +642,17 @@
                 <p>
 
                     Diagnosing machine problems,
-                    machine repair, 
+                    machine repair,
                     preventive maintenance and
                     corrective maintenance.
 
                 </p>
 
-
                 <div class="skill-tags">
 
                     <span>Troubleshooting</span>
-
                     <span>Preventive</span>
-
                     <span>Corrective</span>
-
                     <span>Machine Repair</span>
 
                 </div>
@@ -588,20 +662,19 @@
         </div>
 
 
+        <!-- SKILL 03 — ENGINEERING DESIGN -->
 
-        <!-- ENGINEERING DESIGN -->
-
-        <div class="skill-card"
-             data-aos="fade-up"
-             data-aos-delay="200">
-
+        <div
+            class="skill-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+        >
 
             <div class="skill-card-icon">
 
                 <i class="fa-solid fa-compass-drafting"></i>
 
             </div>
-
 
             <div class="skill-card-content">
 
@@ -621,15 +694,11 @@
 
                 </p>
 
-
                 <div class="skill-tags">
 
                     <span>AutoCAD</span>
-
                     <span>SketchUp</span>
-
                     <span>Enscape</span>
-
                     <span>Technical Drawing</span>
 
                 </div>
@@ -639,20 +708,19 @@
         </div>
 
 
+        <!-- SKILL 04 — WEB DEVELOPMENT -->
 
-        <!-- WEB DEVELOPMENT -->
-
-        <div class="skill-card"
-             data-aos="fade-up"
-             data-aos-delay="300">
-
+        <div
+            class="skill-card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+        >
 
             <div class="skill-card-icon">
 
                 <i class="fa-solid fa-code"></i>
 
             </div>
-
 
             <div class="skill-card-content">
 
@@ -671,15 +739,11 @@
 
                 </p>
 
-
                 <div class="skill-tags">
 
                     <span>HTML</span>
-
                     <span>CSS</span>
-
                     <span>JavaScript</span>
-
                     <span>Git</span>
 
                 </div>
@@ -695,34 +759,69 @@
 
 
 <!-- =====================================================
-     EXPERIENCE
+     EXPERIENCE SECTION
 ===================================================== -->
 
-<section id="experience" class="experience-section">
+<section
+    id="experience"
+    class="experience-section"
+>
 
-    <div class="experience-header" data-aos="fade-up">
-        <span>PROFESSIONAL EXPERIENCE</span>
 
-        <h2>Experience</h2>
+    <!-- EXPERIENCE HEADER -->
+
+    <div
+        class="experience-header"
+        data-aos="fade-up"
+    >
+
+        <span>
+            PROFESSIONAL EXPERIENCE
+        </span>
+
+        <h2>
+            Experience
+        </h2>
 
         <p>
+
             Professional experience across industrial automation,
             electrical engineering, technical support, supervision,
             and engineering design.
+
         </p>
+
     </div>
 
+
+    <!-- EXPERIENCE TIMELINE -->
 
     <div class="experience-timeline">
 
 
-        <!-- EXPERIENCE 01 -->
-        <div class="experience-item" data-aos="fade-up">
+        <!-- =================================================
+             EXPERIENCE 01
+        ================================================== -->
+
+        <div
+            class="experience-item"
+            data-aos="fade-up"
+        >
 
             <div class="experience-period">
-                <span>01 / PRESENT</span>
-                <strong>Oct 2022 – Present</strong>
-                <small>Acting Team Leader</small>
+
+                <span>
+                    01 / PRESENT
+                </span>
+
+                <strong>
+                    Oct 2022 – Present
+                </strong>
+
+                <small>
+                    Acting Team Leader
+                </small>
+
             </div>
 
 
@@ -731,6 +830,7 @@
                 <div class="experience-top">
 
                     <div>
+
                         <span class="experience-label">
                             TECHNICAL SUPPORT ENGINEER
                         </span>
@@ -742,10 +842,13 @@
                         <p class="experience-location">
                             Tangerang Selatan, Indonesia
                         </p>
+
                     </div>
 
                     <div class="experience-icon">
+
                         <i class="fa-solid fa-microchip"></i>
+
                     </div>
 
                 </div>
@@ -755,6 +858,7 @@
 
 
                 <p class="experience-description">
+
                     Providing technical support for industrial
                     automation systems, with responsibilities covering
                     machine maintenance, troubleshooting, repair,
@@ -762,131 +866,201 @@
                     line improvement. Currently serving as an Acting
                     Team Leader, supporting technical coordination
                     and team problem-solving.
+
                 </p>
 
 
+                <!-- RESPONSIBILITIES -->
+
                 <div class="experience-responsibilities">
 
+
+                    <!-- MAINTENANCE -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-screwdriver-wrench"></i>
 
                         <div>
-                            <h4>Maintenance & Repair</h4>
+
+                            <h4>
+                                Maintenance & Repair
+                            </h4>
 
                             <p>
                                 Performing preventive and corrective
                                 maintenance, fault diagnosis, and
                                 repair of automation equipment.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- PLC -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-microchip"></i>
 
                         <div>
-                            <h4>PLC & Automation</h4>
+
+                            <h4>
+                                PLC & Automation
+                            </h4>
 
                             <p>
                                 Working with PLC, HMI, ASRS, conveyor
                                 systems, sensors, actuators, inverters,
                                 and three-phase motors.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- TROUBLESHOOTING -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-magnifying-glass-chart"></i>
 
                         <div>
-                            <h4>Troubleshooting</h4>
+
+                            <h4>
+                                Troubleshooting
+                            </h4>
 
                             <p>
                                 Analyzing electrical and mechanical
                                 faults to identify root causes and
                                 restore machine operation.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- SYSTEM UPGRADES -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-arrows-rotate"></i>
 
                         <div>
-                            <h4>System Upgrades</h4>
+
+                            <h4>
+                                System Upgrades
+                            </h4>
 
                             <p>
                                 Implementing system modifications
                                 and upgrades to improve performance
                                 and reliability.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- TECHNICAL SUPPORT -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-headset"></i>
 
                         <div>
-                            <h4>Technical Support</h4>
+
+                            <h4>
+                                Technical Support
+                            </h4>
 
                             <p>
                                 Providing remote and on-site technical
                                 support to clients and resolving
                                 operational issues.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- DOCUMENTATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-file-lines"></i>
 
                         <div>
-                            <h4>Technical Documentation</h4>
+
+                            <h4>
+                                Technical Documentation
+                            </h4>
 
                             <p>
                                 Reading technical drawings, schematics,
                                 manuals, and preparing maintenance
                                 and service documentation.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- TEAM COORDINATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-users"></i>
 
                         <div>
-                            <h4>Team Coordination</h4>
+
+                            <h4>
+                                Team Coordination
+                            </h4>
 
                             <p>
                                 Supporting team coordination, technical
                                 discussions, task distribution, and
                                 problem-solving as an Acting Team Leader.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- ENGINEERING SOFTWARE -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-code"></i>
 
                         <div>
-                            <h4>Engineering Software</h4>
+
+                            <h4>
+                                Engineering Software
+                            </h4>
 
                             <p>
                                 Siemens TIA Portal, Ladder Diagram,
                                 HMI Design, Factory I/O, and AutoCAD.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
 
+
+                <!-- EXPERIENCE TOOLS -->
 
                 <div class="experience-tools">
 
@@ -910,13 +1084,29 @@
 
 
 
-        <!-- EXPERIENCE 02 -->
-        <div class="experience-item" data-aos="fade-up">
+        <!-- =================================================
+             EXPERIENCE 02
+        ================================================== -->
+
+        <div
+            class="experience-item"
+            data-aos="fade-up"
+        >
 
             <div class="experience-period">
-                <span>02</span>
-                <strong>Oct 2020 – Jul 2021</strong>
-                <small>9 Months</small>
+
+                <span>
+                    02
+                </span>
+
+                <strong>
+                    Oct 2020 – Jul 2021
+                </strong>
+
+                <small>
+                    9 Months
+                </small>
+
             </div>
 
 
@@ -925,6 +1115,7 @@
                 <div class="experience-top">
 
                     <div>
+
                         <span class="experience-label">
                             SUPERVISOR & DESIGN / DRAFTER
                         </span>
@@ -936,10 +1127,13 @@
                         <p class="experience-location">
                             Palu, Indonesia
                         </p>
+
                     </div>
 
                     <div class="experience-icon">
+
                         <i class="fa-solid fa-compass-drafting"></i>
+
                     </div>
 
                 </div>
@@ -949,87 +1143,130 @@
 
 
                 <p class="experience-description">
+
                     Supervised property development activities
                     covering land preparation, plot formation,
                     housing development, land acquisition,
                     and technical design.
+
                 </p>
 
 
                 <div class="experience-responsibilities">
 
+
+                    <!-- PROJECT SUPERVISION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-helmet-safety"></i>
 
                         <div>
-                            <h4>Project Supervision</h4>
+
+                            <h4>
+                                Project Supervision
+                            </h4>
 
                             <p>
                                 Supervising plot formation and
                                 housing development activities
                                 according to project requirements.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- LAND ACQUISITION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-map-location-dot"></i>
 
                         <div>
-                            <h4>Land Acquisition</h4>
+
+                            <h4>
+                                Land Acquisition
+                            </h4>
 
                             <p>
                                 Coordinating land acquisition and
                                 land clearing activities according
                                 to the site plan.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- COMMUNITY COORDINATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-people-group"></i>
 
                         <div>
-                            <h4>Community Coordination</h4>
+
+                            <h4>
+                                Community Coordination
+                            </h4>
 
                             <p>
                                 Coordinating with village leaders
                                 and local communities during
                                 development activities.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- DESIGN & DRAFTING -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-pen-ruler"></i>
 
                         <div>
-                            <h4>Design & Drafting</h4>
+
+                            <h4>
+                                Design & Drafting
+                            </h4>
 
                             <p>
                                 Creating plot and housing site
                                 plans, marketing brochures,
                                 and supporting design materials.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- PROJECT DOCUMENTATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-video"></i>
 
                         <div>
-                            <h4>Project Documentation</h4>
+
+                            <h4>
+                                Project Documentation
+                            </h4>
 
                             <p>
                                 Creating visual and video
                                 documentation of property
                                 development areas.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -1040,13 +1277,29 @@
 
 
 
-        <!-- EXPERIENCE 03 -->
-        <div class="experience-item" data-aos="fade-up">
+        <!-- =================================================
+             EXPERIENCE 03
+        ================================================== -->
+
+        <div
+            class="experience-item"
+            data-aos="fade-up"
+        >
 
             <div class="experience-period">
-                <span>03</span>
-                <strong>Nov 2019 – Feb 2020</strong>
-                <small>4 Months</small>
+
+                <span>
+                    03
+                </span>
+
+                <strong>
+                    Nov 2019 – Feb 2020
+                </strong>
+
+                <small>
+                    4 Months
+                </small>
+
             </div>
 
 
@@ -1055,6 +1308,7 @@
                 <div class="experience-top">
 
                     <div>
+
                         <span class="experience-label">
                             ELECTRICAL TECHNICIAN
                         </span>
@@ -1066,10 +1320,13 @@
                         <p class="experience-location">
                             Yogyakarta, Indonesia
                         </p>
+
                     </div>
 
                     <div class="experience-icon">
+
                         <i class="fa-solid fa-bolt"></i>
+
                     </div>
 
                 </div>
@@ -1079,81 +1336,124 @@
 
 
                 <p class="experience-description">
+
                     Supported electrical installation, maintenance,
                     troubleshooting, and technical design activities
                     for project and company facilities.
+
                 </p>
 
 
                 <div class="experience-responsibilities">
 
+
+                    <!-- ELECTRICAL INSTALLATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-plug"></i>
 
                         <div>
-                            <h4>Electrical Installation</h4>
+
+                            <h4>
+                                Electrical Installation
+                            </h4>
 
                             <p>
                                 Installing electrical systems and
                                 equipment within project areas.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- ELECTRICAL TROUBLESHOOTING -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-triangle-exclamation"></i>
 
                         <div>
-                            <h4>Electrical Troubleshooting</h4>
+
+                            <h4>
+                                Electrical Troubleshooting
+                            </h4>
 
                             <p>
                                 Analyzing and resolving electrical
                                 problems encountered during projects.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- EQUIPMENT MAINTENANCE -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-gears"></i>
 
                         <div>
-                            <h4>Equipment Maintenance</h4>
+
+                            <h4>
+                                Equipment Maintenance
+                            </h4>
 
                             <p>
                                 Maintaining electrical equipment
                                 and company assets.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- ELECTRICAL DESIGN -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-diagram-project"></i>
 
                         <div>
-                            <h4>Electrical Design</h4>
+
+                            <h4>
+                                Electrical Design
+                            </h4>
 
                             <p>
                                 Supporting the design and planning
                                 of electrical installation systems.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- PIPING INSTALLATION -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-grip-lines-vertical"></i>
 
                         <div>
-                            <h4>Piping Installation</h4>
+
+                            <h4>
+                                Piping Installation
+                            </h4>
 
                             <p>
                                 Supporting pipe and piping installation
                                 activities within project areas.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -1164,13 +1464,29 @@
 
 
 
-        <!-- EXPERIENCE 04 -->
-        <div class="experience-item" data-aos="fade-up">
+        <!-- =================================================
+             EXPERIENCE 04
+        ================================================== -->
+
+        <div
+            class="experience-item"
+            data-aos="fade-up"
+        >
 
             <div class="experience-period">
-                <span>04</span>
-                <strong>Aug 2017 – Sep 2017</strong>
-                <small>Internship</small>
+
+                <span>
+                    04
+                </span>
+
+                <strong>
+                    Aug 2017 – Sep 2017
+                </strong>
+
+                <small>
+                    Internship
+                </small>
+
             </div>
 
 
@@ -1179,6 +1495,7 @@
                 <div class="experience-top">
 
                     <div>
+
                         <span class="experience-label">
                             ENGINEERING DIVISION — INTERNSHIP
                         </span>
@@ -1190,10 +1507,13 @@
                         <p class="experience-location">
                             Palu, Indonesia
                         </p>
+
                     </div>
 
                     <div class="experience-icon">
+
                         <i class="fa-solid fa-tower-broadcast"></i>
+
                     </div>
 
                 </div>
@@ -1203,56 +1523,83 @@
 
 
                 <p class="experience-description">
+
                     Supported engineering activities related to
                     communication equipment and aviation antennas
                     used for air navigation services at Mutiara
                     Sis Al-Jufrie Airport, Palu.
+
                 </p>
 
 
                 <div class="experience-responsibilities">
 
+
+                    <!-- COMMUNICATION EQUIPMENT -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-satellite-dish"></i>
 
                         <div>
-                            <h4>Communication Equipment</h4>
+
+                            <h4>
+                                Communication Equipment
+                            </h4>
 
                             <p>
                                 Supporting troubleshooting and
                                 maintenance of aviation communication
                                 equipment.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- AVIATION ANTENNA -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-tower-broadcast"></i>
 
                         <div>
-                            <h4>Aviation Antenna</h4>
+
+                            <h4>
+                                Aviation Antenna
+                            </h4>
 
                             <p>
                                 Supporting inspection and maintenance
                                 of aviation antenna systems.
                             </p>
+
                         </div>
+
                     </div>
 
 
+                    <!-- TECHNICAL REPORTING -->
+
                     <div class="responsibility">
+
                         <i class="fa-solid fa-file-lines"></i>
 
                         <div>
-                            <h4>Technical Reporting</h4>
+
+                            <h4>
+                                Technical Reporting
+                            </h4>
 
                             <p>
                                 Preparing maintenance reports and
                                 documenting equipment conditions
                                 and activities.
                             </p>
+
                         </div>
+
                     </div>
 
                 </div>
@@ -1266,36 +1613,55 @@
 </section>
 
 
+
 <!-- =====================================================
-     CERTIFICATES
+     CERTIFICATES SECTION
 ===================================================== -->
 
-<section id="certificates" class="certificates-section">
+<section
+    id="certificates"
+    class="certificates-section"
+>
 
-    <div class="certificates-header"
-         data-aos="fade-up">
 
-        <span>CERTIFICATES</span>
+    <!-- CERTIFICATES HEADER -->
+
+    <div
+        class="certificates-header"
+        data-aos="fade-up"
+    >
+
+        <span>
+            CERTIFICATES
+        </span>
 
         <h2>
             Training &amp; Professional Development
         </h2>
 
         <p>
+
             Selected training, seminars, and engineering programs
             supporting my technical development and professional growth.
+
         </p>
 
     </div>
 
 
+    <!-- CERTIFICATES LIST -->
+
     <div class="certificates-list">
 
 
-        <!-- CERTIFICATE 01 -->
+        <!-- =================================================
+             CERTIFICATE 01
+        ================================================== -->
 
-        <article class="certificate-item"
-                 data-aos="fade-up">
+        <article
+            class="certificate-item"
+            data-aos="fade-up"
+        >
 
             <div class="certificate-number">
                 01
@@ -1328,9 +1694,11 @@
                     href="assets/certificates/young-building-maintenance-expert-2024.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="certificate-link">
+                    class="certificate-link"
+                >
 
                     View Certificate
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
@@ -1346,10 +1714,15 @@
         </article>
 
 
-        <!-- CERTIFICATE 02 -->
 
-        <article class="certificate-item"
-                 data-aos="fade-up">
+        <!-- =================================================
+             CERTIFICATE 02
+        ================================================== -->
+
+        <article
+            class="certificate-item"
+            data-aos="fade-up"
+        >
 
             <div class="certificate-number">
                 02
@@ -1391,9 +1764,11 @@
                     href="assets/certificates/general-k3-2019.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="certificate-link">
+                    class="certificate-link"
+                >
 
                     View Certificate
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
@@ -1409,10 +1784,15 @@
         </article>
 
 
-        <!-- CERTIFICATE 03 -->
 
-        <article class="certificate-item"
-                 data-aos="fade-up">
+        <!-- =================================================
+             CERTIFICATE 03
+        ================================================== -->
+
+        <article
+            class="certificate-item"
+            data-aos="fade-up"
+        >
 
             <div class="certificate-number">
                 03
@@ -1450,9 +1830,11 @@
                     href="assets/certificates/automatic-air-conditioner-control-2019.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="certificate-link">
+                    class="certificate-link"
+                >
 
                     View Certificate
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
@@ -1468,10 +1850,15 @@
         </article>
 
 
-        <!-- CERTIFICATE 04 -->
 
-        <article class="certificate-item"
-                 data-aos="fade-up">
+        <!-- =================================================
+             CERTIFICATE 04
+        ================================================== -->
+
+        <article
+            class="certificate-item"
+            data-aos="fade-up"
+        >
 
             <div class="certificate-number">
                 04
@@ -1509,9 +1896,11 @@
                     href="assets/certificates/national-seminar-2017.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="certificate-link">
+                    class="certificate-link"
+                >
 
                     View Certificate
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
@@ -1527,10 +1916,15 @@
         </article>
 
 
-        <!-- CERTIFICATE 05 -->
 
-        <article class="certificate-item"
-                 data-aos="fade-up">
+        <!-- =================================================
+             CERTIFICATE 05
+        ================================================== -->
+
+        <article
+            class="certificate-item"
+            data-aos="fade-up"
+        >
 
             <div class="certificate-number">
                 05
@@ -1568,9 +1962,11 @@
                     href="assets/certificates/autocad-5-day-training-2020.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="certificate-link">
+                    class="certificate-link"
+                >
 
                     View Certificate
+
                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                 </a>
@@ -1585,24 +1981,28 @@
 
         </article>
 
-
     </div>
 
 </section>
 
 
+
 <!-- =====================================================
-     PROJECTS
+     PROJECTS SECTION
 ===================================================== -->
 
-<section id="projects"
-         class="projects-section">
+<section
+    id="projects"
+    class="projects-section"
+>
 
 
-    <!-- HEADER -->
+    <!-- PROJECTS HEADER -->
 
-    <div class="projects-header"
-         data-aos="fade-up">
+    <div
+        class="projects-header"
+        data-aos="fade-up"
+    >
 
         <span>
             SELECTED PROJECTS
@@ -1622,270 +2022,910 @@
     </div>
 
 
+    <!-- =================================================
+         PROJECT FILTER
+    ================================================== -->
 
-<!-- PROJECT 01 -->
+    <div
+        class="project-filters"
+        data-aos="fade-up"
+    >
 
-<article class="project" data-aos="fade-up">
-    <div class="project-number">01</div>
+        <button
+            class="filter-btn active"
+            data-filter="all"
+        >
+            ALL
+        </button>
 
-    <div class="project-content">
+        <button
+            class="filter-btn"
+            data-filter="automation"
+        >
+            INDUSTRIAL AUTOMATION
+        </button>
 
-        <span class="project-category">INDUSTRIAL AUTOMATION</span>
-
-        <div class="project-image">
-            <img
-                src="images/projects/pid-water-level.jpg"
-                alt="PID Control Water Level Project">
-        </div>
-
-        <h3>PID Control Water Level</h3>
-
-        <p>
-            Developed an automated water level control system using PID control
-            to maintain the desired water level and improve process stability.
-            The system was programmed using Siemens TIA Portal V15 with Ladder
-            Diagram, integrated with Siemens HMI for monitoring and control,
-            and simulated in Factory I/O to validate the control logic and
-            process response.
-        </p>
-
-        <div class="project-details">
-            <div>
-                <span>PLATFORM</span>
-                <strong>Siemens PLC</strong>
-            </div>
-
-            <div>
-                <span>SOFTWARE</span>
-                <strong>TIA Portal V15</strong>
-            </div>
-
-            <div>
-                <span>SIMULATION</span>
-                <strong>Factory I/O</strong>
-            </div>
-
-            <div>
-                <span>CONTROL</span>
-                <strong>Sequential Control</strong>
-            </div>
-        </div>
-
-        <div class="project-tech">
-            <span>PLC</span>
-            <span>Ladder Diagram</span>
-            <span>PID</span>
-            <span>HMI</span>
-            <span>Factory I/O</span>
-        </div>
-
-        <div class="project-links">
-
-            <a
-                href="https://www.linkedin.com/posts/moh-rasyid-ridha_plc-siemensplc-tiaportal-activity-7347607249579667456-j8zs"
-                target="_blank"
-                rel="noopener noreferrer">
-
-                <i class="fa-brands fa-linkedin"></i>
-                Watch Project Video
-
-            </a>
-
-        </div>
+        <button
+            class="filter-btn"
+            data-filter="3d"
+        >
+            3D DESIGN
+        </button>
 
     </div>
-</article>
 
 
 
-    <!-- PROJECT 02 -->
+    <!-- =================================================
+         PROJECT 01 — PID CONTROL WATER LEVEL
+    ================================================== -->
 
-<article class="project" data-aos="fade-up">
+    <article
+        class="project"
+        data-aos="fade-up"
+        data-category="automation"
+    >
 
-    <div class="project-number">02</div>
-
-    <div class="project-content">
-
-        <span class="project-category">
-            INDUSTRIAL AUTOMATION
-        </span>
-
-        <!-- Project Image -->
-        <div class="project-image">
-            <img
-                src="images/projects/elevator-system.jpg"
-                alt="Elevator Station System 3rd Floor Project">
+        <div class="project-number">
+            01
         </div>
 
-        <!-- Project Title -->
-        <h3>Elevator Station System – 3rd Floor</h3>
+        <div class="project-content">
 
-        <!-- Project Description -->
-        <p>
-            Developed a PLC-based elevator station simulation for automated
-            elevator operation and sequential control. The system was
-            programmed using Siemens TIA Portal V15 with Ladder Diagram and
-            simulated in Factory I/O to validate elevator movement, floor
-            station control, and sequential operating logic.
-        </p>
+            <span class="project-category">
+                INDUSTRIAL AUTOMATION
+            </span>
 
-        <!-- Project Details -->
-        <div class="project-details">
 
-            <div>
-                <span>PLATFORM</span>
-                <strong>Siemens PLC</strong>
+            <!-- PROJECT IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/pid-water-level.jpg"
+                    alt="PID Control Water Level Project"
+                >
+
             </div>
 
-            <div>
-                <span>SOFTWARE</span>
-                <strong>TIA Portal V15</strong>
+
+            <!-- PROJECT TITLE -->
+
+            <h3>
+                PID Control Water Level
+            </h3>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <p>
+
+                Developed an automated water level control system using PID control
+                to maintain the desired water level and improve process stability.
+                The system was programmed using Siemens TIA Portal V15 with Ladder
+                Diagram, integrated with Siemens HMI for monitoring and control,
+                and simulated in Factory I/O to validate the control logic and
+                process response.
+
+            </p>
+
+
+            <!-- PROJECT DETAILS -->
+
+            <div class="project-details">
+
+                <div>
+
+                    <span>
+                        PLATFORM
+                    </span>
+
+                    <strong>
+                        Siemens PLC
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SOFTWARE
+                    </span>
+
+                    <strong>
+                        TIA Portal V15
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SIMULATION
+                    </span>
+
+                    <strong>
+                        Factory I/O
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        CONTROL
+                    </span>
+
+                    <strong>
+                        Sequential Control
+                    </strong>
+
+                </div>
+
             </div>
 
-            <div>
-                <span>SIMULATION</span>
-                <strong>Factory I/O</strong>
+
+            <!-- TECHNOLOGIES -->
+
+            <div class="project-tech">
+
+                <span>PLC</span>
+                <span>Ladder Diagram</span>
+                <span>PID</span>
+                <span>HMI</span>
+                <span>Factory I/O</span>
+
             </div>
 
-            <div>
-                <span>CONTROL</span>
-                <strong>Sequential Control</strong>
-            </div>
 
-        </div>
+            <!-- PROJECT LINK -->
 
-        <!-- Technologies -->
-        <div class="project-tech">
-            <span>PLC</span>
-            <span>TIA Portal V15</span>
-            <span>Ladder Diagram</span>
-            <span>Factory I/O</span>
-            <span>Sequential Control</span>
-        </div>
+            <div class="project-links">
 
-        <!-- LinkedIn -->
-        <div class="project-links">
+                <a
+                    href="https://www.linkedin.com/posts/moh-rasyid-ridha_plc-siemensplc-tiaportal-activity-7347607249579667456-j8zs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
 
-            <a
-                href="https://www.linkedin.com/posts/moh-rasyid-ridha_automation-plc-tiaabrportal-activity-7401925537100931072-VSOZ"
-                target="_blank"
-                rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
 
-                <i class="fa-brands fa-linkedin"></i>
                     Watch Project Video
 
-            </a>
+                </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-</article>
+    </article>
 
 
 
-    <!-- PROJECT 03 -->
+    <!-- =================================================
+         PROJECT 02 — ELEVATOR STATION SYSTEM
+    ================================================== -->
 
-<article class="project" data-aos="fade-up">
+    <article
+        class="project"
+        data-aos="fade-up"
+        data-category="automation"
+    >
 
-    <div class="project-number">03</div>
+        <div class="project-number">
+            02
+        </div>
 
-    <div class="project-content">
+        <div class="project-content">
 
-        <span class="project-category">
-            INDUSTRIAL AUTOMATION
-        </span>
+            <span class="project-category">
+                INDUSTRIAL AUTOMATION
+            </span>
 
-        <!-- Project Image -->
-        <div class="project-image">
+
+            <!-- PROJECT IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/elevator-system.jpg"
+                    alt="Elevator Station System 3rd Floor Project"
+                >
+
+            </div>
+
+
+            <!-- PROJECT TITLE -->
+
+            <h3>
+                Elevator Station System – 3rd Floor
+            </h3>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <p>
+
+                Developed a PLC-based elevator station simulation for automated
+                elevator operation and sequential control. The system was
+                programmed using Siemens TIA Portal V15 with Ladder Diagram and
+                simulated in Factory I/O to validate elevator movement, floor
+                station control, and sequential operating logic.
+
+            </p>
+
+
+            <!-- PROJECT DETAILS -->
+
+            <div class="project-details">
+
+                <div>
+
+                    <span>
+                        PLATFORM
+                    </span>
+
+                    <strong>
+                        Siemens PLC
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SOFTWARE
+                    </span>
+
+                    <strong>
+                        TIA Portal V15
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SIMULATION
+                    </span>
+
+                    <strong>
+                        Factory I/O
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        CONTROL
+                    </span>
+
+                    <strong>
+                        Sequential Control
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNOLOGIES -->
+
+            <div class="project-tech">
+
+                <span>PLC</span>
+                <span>TIA Portal V15</span>
+                <span>Ladder Diagram</span>
+                <span>Factory I/O</span>
+                <span>Sequential Control</span>
+
+            </div>
+
+
+            <!-- PROJECT LINK -->
+
+            <div class="project-links">
+
+                <a
+                    href="https://www.linkedin.com/posts/moh-rasyid-ridha_automation-plc-tiaabrportal-activity-7401925537100931072-VSOZ"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    Watch Project Video
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================================
+         PROJECT 03 — AUTOMATED SORTING STATION
+    ================================================== -->
+
+    <article
+        class="project"
+        data-aos="fade-up"
+        data-category="automation"
+    >
+
+        <div class="project-number">
+            03
+        </div>
+
+        <div class="project-content">
+
+            <span class="project-category">
+                INDUSTRIAL AUTOMATION
+            </span>
+
+
+            <!-- PROJECT IMAGE -->
+
+            <div class="project-image">
+
+                <img
+                    src="images/projects/sorting-station.jpg"
+                    alt="Automated Sorting Station Project"
+                >
+
+            </div>
+
+
+            <!-- PROJECT TITLE -->
+
+            <h3>
+                Automated Sorting Station
+            </h3>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <p>
+
+                Developed an automated sorting station simulation for
+                conveyor-based material handling and sequential object sorting.
+                The system was programmed using Siemens PLC and TIA Portal with
+                Ladder Diagram logic to control conveyor movement, object
+                detection, and sorting operations. Factory I/O was used to
+                simulate the process and validate the automation logic.
+
+            </p>
+
+
+            <!-- PROJECT DETAILS -->
+
+            <div class="project-details">
+
+                <div>
+
+                    <span>
+                        PLATFORM
+                    </span>
+
+                    <strong>
+                        Siemens PLC
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SOFTWARE
+                    </span>
+
+                    <strong>
+                        TIA Portal
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        SIMULATION
+                    </span>
+
+                    <strong>
+                        Factory I/O
+                    </strong>
+
+                </div>
+
+                <div>
+
+                    <span>
+                        CONTROL
+                    </span>
+
+                    <strong>
+                        Sequential Control
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNOLOGIES -->
+
+            <div class="project-tech">
+
+                <span>PLC</span>
+                <span>TIA Portal</span>
+                <span>SIMATIC Manager</span>
+                <span>Ladder Diagram</span>
+                <span>Factory I/O</span>
+                <span>Conveyor Automation</span>
+
+            </div>
+
+
+            <!-- PROJECT LINK -->
+
+            <div class="project-links">
+
+                <a
+                    href="https://www.linkedin.com/posts/moh-rasyid-ridha_tiarportal-factoryio-plcsiemens-activity-7266482993932697600-nWGN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    Watch Project Video
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================================
+         PROJECT 04 — 3D EXHIBITION BOOTH
+    ================================================== -->
+
+    <article
+        id="project04Card"
+        class="project"
+        data-category="3d"
+        data-aos="fade-up"
+    >
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-image project-detail-trigger">
+
             <img
-                src="images/projects/sorting-station.jpg"
-                alt="Automated Sorting Station Project">
-        </div>
+                src="images/projects/3d-industrial-design.jpg"
+                alt="3D Industrial Engineering Design"
+                loading="lazy"
+            >
 
-        <!-- Project Title -->
-        <h3>Automated Sorting Station</h3>
-
-        <!-- Project Description -->
-        <p>
-            Developed an automated sorting station simulation for
-            conveyor-based material handling and sequential object sorting.
-            The system was programmed using Siemens PLC and TIA Portal with
-            Ladder Diagram logic to control conveyor movement, object
-            detection, and sorting operations. Factory I/O was used to
-            simulate the process and validate the automation logic.
-        </p>
-
-        <!-- Project Details -->
-        <div class="project-details">
-
-            <div>
-                <span>PLATFORM</span>
-                <strong>Siemens PLC</strong>
+            <div class="project-number">
+                04
             </div>
 
-            <div>
-                <span>SOFTWARE</span>
-                <strong>TIA Portal</strong>
-            </div>
+            <div class="project-overlay">
 
-            <div>
-                <span>SIMULATION</span>
-                <strong>Factory I/O</strong>
-            </div>
+                <span>
 
-            <div>
-                <span>CONTROL</span>
-                <strong>Sequential Control</strong>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    VIEW DETAILS
+
+                </span>
+
             </div>
 
         </div>
 
-        <!-- Technologies -->
-        <div class="project-tech">
 
-            <span>PLC</span>
-            <span>TIA Portal</span>
-            <span>SIMATIC Manager</span>
-            <span>Ladder Diagram</span>
-            <span>Factory I/O</span>
-            <span>Conveyor Automation</span>
+        <!-- PROJECT CONTENT -->
+
+        <div class="project-content">
+
+            <div class="project-meta">
+
+                <span class="project-category">
+                    Modern Exhibition Booth Design & Architectural Visualization
+                </span>
+
+                <span class="project-year">
+                    2024
+                </span>
+
+            </div>
+
+
+            <h3>
+                3D EXHIBITION BOOTH DESIGN & VISUALIZATION
+            </h3>
+
+
+            <p>
+
+                3D modeling and architectural visualization of a modern trade show booth, featuring
+                a futuristic hexagonal structure, custom consultation area, integrated digital displays,
+                backlit branding, realistic materials, and professional lighting.
+
+            </p>
+
+
+            <!-- PROJECT TOOLS -->
+
+            <div class="project-tools">
+
+                <span>
+
+                    <i class="fa-solid fa-drafting-compass"></i>
+
+                    AutoCAD
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-cube"></i>
+
+                    SketchUp
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-image"></i>
+
+                    Enscape
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-ruler-combined"></i>
+
+                    3D Modeling
+
+                </span>
+
+            </div>
+
+
+            <!-- PROJECT LINKS -->
+
+            <div class="project-links">
+
+                <button
+                    type="button"
+                    class="project-link primary project-detail-btn"
+                >
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    View Details
+
+                </button>
+
+
+                <a
+                    href="https://www.instagram.com/p/DM18woEBL8Y/?igsi=NzBrcXhleGwzMWE2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link secondary"
+                    aria-label="View project on Instagram"
+                >
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+            </div>
 
         </div>
 
-        <!-- LinkedIn -->
-        <div class="project-links">
+    </article>
 
-            <a
-                href="https://www.linkedin.com/posts/moh-rasyid-ridha_tiarportal-factoryio-plcsiemens-activity-7266482993932697600-nWGN"
-                target="_blank"
-                rel="noopener noreferrer">
 
-                <i class="fa-brands fa-linkedin"></i>
-                Watch Project Video
 
-            </a>
+    <!-- =================================================
+         PROJECT 05 — 3D McCAFE KIOSK
+    ================================================== -->
+
+    <article
+        id="project05Card"
+        class="project"
+        data-category="3d"
+        data-aos="fade-up"
+    >
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-image project-detail-trigger">
+
+            <img
+                src="images/projects/3d-mccafe-kiosk.jpg"
+                alt="3D McCafe Kiosk Design"
+                loading="lazy"
+            >
+
+            <div class="project-number">
+                05
+            </div>
+
+            <div class="project-overlay">
+
+                <span>
+
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    VIEW DETAILS
+
+                </span>
+
+            </div>
 
         </div>
 
-    </div>
 
-</article>
+        <!-- PROJECT CONTENT -->
+
+        <div class="project-content">
+
+            <div class="project-meta">
+
+                <span class="project-category">
+                    3D DESIGN
+                </span>
+
+                <span class="project-year">
+                    2025
+                </span>
+
+            </div>
+
+
+            <h3>
+                3D McCAFE KIOSK DESIGN
+            </h3>
+
+
+            <p>
+
+                A modern commercial 3D kiosk design tailored for McCafe, blending
+                contemporary architectural geometry with functional retail ergonomics.
+                The concept incorporates brand identity elements, warm wooden finishes,
+                sleek dark green paneling, modern acrylic signage, and illuminated neon
+                logo displays to create an inviting coffee station suitable for
+                shopping malls or commercial plazas.
+
+            </p>
+
+
+            <!-- PROJECT TOOLS -->
+
+            <div class="project-tools">
+
+                <span>
+
+                    <i class="fa-solid fa-cube"></i>
+
+                    3ds Max / SketchUp
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-vr-cardboard"></i>
+
+                    V-Ray / Blender
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-image"></i>
+
+                    Adobe Photoshop
+
+                </span>
+
+            </div>
+
+
+            <!-- PROJECT LINKS -->
+
+            <div class="project-links">
+
+                <button
+                    type="button"
+                    class="project-link primary project-detail-btn"
+                >
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    View Details
+
+                </button>
+
+
+                <a
+                    href="https://www.instagram.com/p/DIJSU3NBQ76/?igsi=djNjZzVid3NlOXpm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link secondary"
+                    aria-label="View project on Instagram"
+                >
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+
+    <!-- =================================================
+         PROJECT 06 — 3D MODERN ISLAMIC CENTER
+    ================================================== -->
+
+    <article
+        id="project06Card"
+        class="project"
+        data-category="3d"
+        data-aos="fade-up"
+    >
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-image project-detail-trigger">
+
+            <img
+                src="images/projects/3d-al-birqah-islamic-center.jpg"
+                alt="3D Modern Islamic Center Al-Birqah"
+                loading="lazy"
+            >
+
+            <div class="project-number">
+                06
+            </div>
+
+            <div class="project-overlay">
+
+                <span>
+
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+                    VIEW DETAILS
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- PROJECT CONTENT -->
+
+        <div class="project-content">
+
+            <div class="project-meta">
+
+                <span class="project-category">
+                    3D DESIGN
+                </span>
+
+                <span class="project-year">
+                    2026
+                </span>
+
+            </div>
+
+
+            <h3>
+                3D MODERN ISLAMIC CENTER "AL-BIRQAH"
+            </h3>
+
+
+            <p>
+
+                A modern architectural 3D visualization of the "Al-Birqah"
+                Islamic building complex, combining contemporary minimalist
+                geometry with subtle Islamic design elements, expansive glass
+                façades, illuminated calligraphy, and atmospheric tropical
+                evening landscaping.
+
+            </p>
+
+
+            <!-- PROJECT TOOLS -->
+
+            <div class="project-tools">
+
+                <span>
+
+                    <i class="fa-solid fa-cube"></i>
+
+                    3ds Max / SketchUp
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-vr-cardboard"></i>
+
+                    V-Ray / Enscape / Lumion
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-image"></i>
+
+                    Adobe Photoshop
+
+                </span>
+
+            </div>
+
+
+            <!-- PROJECT LINKS -->
+
+            <div class="project-links">
+
+                <button
+                    type="button"
+                    class="project-link primary project-detail-btn"
+                >
+
+                    <i class="fa-solid fa-circle-info"></i>
+
+                    View Details
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
 
 
 
 <!-- =====================================================
-     CONTACT
+     CONTACT SECTION
 ===================================================== -->
 
-<section id="contact"
-         class="contact-section">
+<section
+    id="contact"
+    class="contact-section"
+>
 
 
-    <!-- HEADER -->
+    <!-- CONTACT HEADER -->
 
-    <div class="contact-header"
-         data-aos="fade-up">
+    <div
+        class="contact-header"
+        data-aos="fade-up"
+    >
 
         <span>
             CONTACT
@@ -1905,22 +2945,21 @@
     </div>
 
 
-
     <!-- CONTACT CONTENT -->
 
-    <div class="contact-container"
-         data-aos="fade-up">
+    <div
+        class="contact-container"
+        data-aos="fade-up"
+    >
 
 
         <!-- CONTACT INFORMATION -->
 
         <div class="contact-info">
 
-
             <h3>
                 Get in touch
             </h3>
-
 
             <p>
 
@@ -1933,16 +2972,16 @@
 
             <!-- EMAIL -->
 
-            <a href="mailto:mohrasyidridha22@gmail.com"
-               class="contact-item">
-
+            <a
+                href="mailto:mohrasyidridha22@gmail.com"
+                class="contact-item"
+            >
 
                 <div class="contact-icon">
 
                     <i class="fa-solid fa-envelope"></i>
 
                 </div>
-
 
                 <div class="contact-item-text">
 
@@ -1959,21 +2998,20 @@
             </a>
 
 
-
             <!-- LINKEDIN -->
 
-            <a href="https://www.linkedin.com/in/moh-rasyid-ridha/"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="contact-item">
-
+            <a
+                href="https://www.linkedin.com/in/moh-rasyid-ridha/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+            >
 
                 <div class="contact-icon">
 
                     <i class="fa-brands fa-linkedin-in"></i>
 
                 </div>
-
 
                 <div class="contact-item-text">
 
@@ -1990,21 +3028,20 @@
             </a>
 
 
-
             <!-- GITHUB -->
 
-            <a href="https://github.com/username"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="contact-item">
-
+            <a
+                href="https://github.com/username"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-item"
+            >
 
                 <div class="contact-icon">
 
                     <i class="fa-brands fa-github"></i>
 
                 </div>
-
 
                 <div class="contact-item-text">
 
@@ -2023,20 +3060,20 @@
         </div>
 
 
-
         <!-- CONTACT FORM -->
 
         <div class="contact-form-panel">
-
 
             <h3>
                 Send a Message
             </h3>
 
 
-            <form action="https://formspree.io/f/mqpkbeeo"
+            <form
+                action="https://formspree.io/f/mqpkbeeo"
                 method="POST"
-                class="contact-form">
+                class="contact-form"
+            >
 
 
                 <!-- NAME -->
@@ -2047,14 +3084,15 @@
                         Name
                     </label>
 
-                    <input type="text"
-                           id="name"
-                           name="Name"
-                           placeholder="Your name"
-                           required>
+                    <input
+                        type="text"
+                        id="name"
+                        name="Name"
+                        placeholder="Your name"
+                        required
+                    >
 
                 </div>
-
 
 
                 <!-- EMAIL -->
@@ -2065,14 +3103,15 @@
                         Email
                     </label>
 
-                    <input type="email"
-                           id="email"
-                           name="Email"
-                           placeholder="Your email"
-                           required>
+                    <input
+                        type="email"
+                        id="email"
+                        name="Email"
+                        placeholder="Your email"
+                        required
+                    >
 
                 </div>
-
 
 
                 <!-- SUBJECT -->
@@ -2083,14 +3122,15 @@
                         Subject
                     </label>
 
-                    <input type="text"
-                           id="subject"
-                           name="Subject"
-                           placeholder="Job opportunity / Project"
-                           required>
+                    <input
+                        type="text"
+                        id="subject"
+                        name="Subject"
+                        placeholder="Job opportunity / Project"
+                        required
+                    >
 
                 </div>
-
 
 
                 <!-- MESSAGE -->
@@ -2101,20 +3141,23 @@
                         Message
                     </label>
 
-                    <textarea id="message"
-                              name="Message"
-                              rows="5"
-                              placeholder="Write your message..."
-                              required></textarea>
+                    <textarea
+                        id="message"
+                        name="Message"
+                        rows="5"
+                        placeholder="Write your message..."
+                        required
+                    ></textarea>
 
                 </div>
 
 
+                <!-- SUBMIT BUTTON -->
 
-                <!-- SUBMIT -->
-
-                <button type="submit"
-                        class="contact-submit">
+                <button
+                    type="submit"
+                    class="contact-submit"
+                >
 
                     Send Message
 
@@ -2140,7 +3183,10 @@
 
     <p>
 
-        © <span id="year"></span>
+        ©
+
+        <span id="year"></span>
+
         Moh Rasyid Ridha
 
     </p>
@@ -2150,10 +3196,856 @@
 
 
 <!-- =====================================================
-     SCRIPTS
+     PROJECT MODALS
 ===================================================== -->
 
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- =====================================================
+     PROJECT 04 MODAL
+===================================================== -->
+
+<div
+    class="project-modal"
+    id="projectModal"
+>
+
+    <div class="project-modal-overlay"></div>
+
+
+    <div class="project-modal-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            class="project-modal-close"
+            id="projectModalClose"
+            aria-label="Close project details"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-modal-image">
+
+            <img
+                src="images/projects/3d-industrial-design.jpg"
+                alt="3D Industrial Engineering Design"
+            >
+
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+
+        <div class="project-modal-info">
+
+            <span class="modal-category">
+                Modern Exhibition Booth Design & Visualization
+            </span>
+
+            <h2>
+                3D EXHIBITION BOOTH DESIGN & VISUALIZATION
+            </h2>
+
+
+            <!-- DESCRIPTION -->
+
+            <p>
+
+                A modern 3D exhibition booth concept designed to create
+                a strong and engaging brand presence within a professional
+                trade show environment.
+
+            </p>
+
+            <p>
+
+                The design combines
+                <strong>futuristic hexagonal geometry</strong>,
+                natural <strong>light-wood textures</strong>, bold red,
+                white, and black accents, integrated digital displays,
+                and <strong>backlit branding</strong> to create a
+                distinctive visual identity.
+
+            </p>
+
+            <p>
+
+                The booth layout incorporates a
+                <strong>dedicated consultation and demonstration area</strong>,
+                custom counter, digital media display, and an elevated
+                black platform to provide a clear, functional, and
+                sophisticated exhibition space.
+
+            </p>
+
+
+            <!-- DESIGN HIGHLIGHTS -->
+
+            <div class="modal-highlights">
+
+                <h4>
+                    Design Highlights
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-cube"></i>
+
+                        <span>
+                            Futuristic Hexagonal Structure
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>
+                            Custom Consultation & Demonstration Area
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-display"></i>
+
+                        <span>
+                            Integrated Digital Display & Backlit Branding
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>
+                            Realistic Material & Lighting Visualization
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-ruler-combined"></i>
+
+                        <span>
+                            Modern Spatial Planning
+                        </span>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+                            Professional Exhibition Environment
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PROJECT DETAILS -->
+
+            <div class="modal-details">
+
+
+                <!-- PROJECT TYPE -->
+
+                <div class="modal-detail-item">
+
+                    <i class="fa-solid fa-cube"></i>
+
+                    <div>
+
+                        <small>
+                            PROJECT TYPE
+                        </small>
+
+                        <strong>
+                            3D Modeling
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- YEAR -->
+
+                <div class="modal-detail-item">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <div>
+
+                        <small>
+                            YEAR
+                        </small>
+
+                        <strong>
+                            2025
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- APPLICATION -->
+
+                <div class="modal-detail-item">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                    <div>
+
+                        <small>
+                            APPLICATION
+                        </small>
+
+                        <strong>
+                            Industrial Visualization
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFTWARE -->
+
+            <div class="modal-software">
+
+                <h4>
+                    Software & Tools
+                </h4>
+
+                <div class="software-list">
+
+                    <span>
+
+                        <i class="fa-solid fa-cube"></i>
+
+                        SketchUp
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-image"></i>
+
+                        Enscape
+
+                    </span>
+
+                    <span>
+
+                        <i class="fa-solid fa-ruler-combined"></i>
+
+                        3D Modeling
+
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="https://www.instagram.com/p/DIJS2ckBPTH/?igsi=MXNyY2ppNGo5djN0OA="
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-instagram-btn"
+            >
+
+                <i class="fa-brands fa-instagram"></i>
+
+                View Project on Instagram
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     PROJECT 05 MODAL
+===================================================== -->
+
+<div
+    class="project-modal"
+    id="project05Modal"
+>
+
+    <div class="project-modal-overlay"></div>
+
+
+    <div class="project-modal-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            class="project-modal-close"
+            id="project05ModalClose"
+            aria-label="Close project details"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-modal-image">
+
+            <img
+                src="images/projects/3d-mccafe-kiosk.jpg"
+                alt="3D McCafe Kiosk Design"
+            >
+
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+
+        <div class="project-modal-info">
+
+            <div class="project-meta">
+
+                <span class="project-category">
+                    3D DESIGN & ARCHITECTURAL VISUALIZATION
+                </span>
+
+                <span class="project-year">
+                    2025
+                </span>
+
+            </div>
+
+
+            <h3>
+                3D McCAFE KIOSK DESIGN
+            </h3>
+
+
+            <!-- DESCRIPTION -->
+
+            <p>
+
+                A modern commercial 3D kiosk design tailored for McCafe,
+                blending contemporary architectural geometry with
+                functional retail ergonomics. The concept is developed
+                to create an inviting, recognizable, and efficient
+                coffee station suitable for high-traffic commercial
+                environments such as shopping malls and commercial plazas.
+
+            </p>
+
+            <p>
+
+                The design combines warm wooden finishes, sleek dark green
+                paneling, crisp white counter surfaces, modern acrylic
+                signage, and illuminated neon branding to establish a
+                strong and contemporary visual identity.
+
+            </p>
+
+
+            <!-- DESIGN HIGHLIGHTS -->
+
+            <div class="modal-highlights">
+
+                <h4>
+                    Design Highlights
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>
+
+                            <strong>
+                                Illuminated Neon Branding
+                            </strong>
+
+                            <br>
+
+                            Custom 3D McCafe and Golden Arches LED/neon
+                            signage with realistic emissive lighting.
+
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                        <span>
+
+                            <strong>
+                                Material Harmony
+                            </strong>
+
+                            <br>
+
+                            Natural wood slatting, crisp white solid
+                            counters, and deep forest green base structures.
+
+                        </span>
+
+                    </li>
+
+
+                    <li>
+
+                        <i class="fa-solid fa-store"></i>
+
+                        <span>
+
+                            <strong>
+                                Functional Layout
+                            </strong>
+
+                            <br>
+
+                            Integrated display showcase, order/POS counter,
+                            espresso machine work area, and framed artwork
+                            accent wall.
+
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- DESIGN FOCUS -->
+
+            <div class="modal-focus">
+
+                <h4>
+                    Design Focus
+                </h4>
+
+                <div class="focus-tags">
+
+                    <span>
+                        Retail Kiosk Architecture
+                    </span>
+
+                    <span>
+                        Architectural Visualization
+                    </span>
+
+                    <span>
+                        Commercial Space Planning
+                    </span>
+
+                    <span>
+                        Spatial Lighting
+                    </span>
+
+                    <span>
+                        Material Setup
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFTWARE & TOOLS -->
+
+            <div class="modal-details">
+
+                <div>
+
+                    <strong>
+                        Software & Tools
+                    </strong>
+
+                    <div class="modal-software">
+
+                        <span>
+
+                            <i class="fa-solid fa-cube"></i>
+
+                            Autodesk 3ds Max / SketchUp
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-vr-cardboard"></i>
+
+                            V-Ray / Blender
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-image"></i>
+
+                            Adobe Photoshop
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="https://www.instagram.com/p/DIJSU3NBQ76/?igsi=djNjZzVid3NlOXpm"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-instagram-btn"
+            >
+
+                <i class="fa-brands fa-instagram"></i>
+
+                View Project on Instagram
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     PROJECT 06 MODAL
+===================================================== -->
+
+<div
+    class="project-modal"
+    id="project06Modal"
+>
+
+    <div class="project-modal-overlay"></div>
+
+
+    <div class="project-modal-content">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            type="button"
+            class="project-modal-close"
+            id="project06ModalClose"
+            aria-label="Close project details"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+        <!-- PROJECT IMAGE -->
+
+        <div class="project-modal-image">
+
+            <img
+                src="images/projects/3d-al-birqah-islamic-center.jpg"
+                alt="3D Modern Islamic Center Al-Birqah"
+            >
+
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+
+        <div class="project-modal-info">
+
+
+            <!-- PROJECT META -->
+
+            <div class="project-meta">
+
+                <span class="project-category">
+                    3D ARCHITECTURAL VISUALIZATION
+                </span>
+
+                <span class="project-year">
+                    2026
+                </span>
+
+            </div>
+
+
+            <!-- PROJECT TITLE -->
+
+            <h3>
+                3D MODERN ISLAMIC CENTER "AL-BIRQAH"
+            </h3>
+
+
+            <!-- PROJECT DESCRIPTION -->
+
+            <p>
+
+                A modern architectural 3D visualization of the
+                "Al-Birqah" Islamic building complex, harmonizing
+                contemporary minimalist geometric aesthetics with
+                subtle Islamic geometric pattern detailing.
+
+            </p>
+
+            <p>
+
+                Designed for twilight rendering, the concept features
+                expansive floor-to-ceiling glass paneling, an open
+                surrounding porch, illuminated calligraphic facade
+                elements, and ambient accent landscaping lights
+                against a lush tropical backdrop.
+
+            </p>
+
+
+            <!-- DESIGN HIGHLIGHTS -->
+
+            <div class="modal-highlights">
+
+                <h4>
+                    Design Highlights
+                </h4>
+
+                <ul>
+
+
+                    <!-- FACADE CALLIGRAPHY -->
+
+                    <li>
+
+                        <i class="fa-solid fa-mosque"></i>
+
+                        <span>
+
+                            <strong>
+                                Decorative Facade Calligraphy
+                            </strong>
+
+                            <br>
+
+                            Intricate Islamic geometric pattern detailing,
+                            dynamic lighting bands along the main roof fascia,
+                            and custom illuminated typography.
+
+                        </span>
+
+                    </li>
+
+
+                    <!-- TRANSPARENT ENVELOPE -->
+
+                    <li>
+
+                        <i class="fa-solid fa-building"></i>
+
+                        <span>
+
+                            <strong>
+                                Modern Transparent Envelope
+                            </strong>
+
+                            <br>
+
+                            Full-height glass doors and curtain wall elements
+                            creating a seamless visual connection between
+                            the indoor sanctuary and outdoor perimeter.
+
+                        </span>
+
+                    </li>
+
+
+                    <!-- EVENING LIGHTING -->
+
+                    <li>
+
+                        <i class="fa-solid fa-lightbulb"></i>
+
+                        <span>
+
+                            <strong>
+                                Atmospheric Evening Lighting
+                            </strong>
+
+                            <br>
+
+                            Dynamic twilight exterior illumination highlighting
+                            architectural features, porch overhangs, and
+                            landscape pathways.
+
+                        </span>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- DESIGN FOCUS -->
+
+            <div class="modal-focus">
+
+                <h4>
+                    Design Focus
+                </h4>
+
+                <div class="focus-tags">
+
+                    <span>
+                        Exterior Architectural Visualization
+                    </span>
+
+                    <span>
+                        Modern Islamic Architecture
+                    </span>
+
+                    <span>
+                        Landscape Integration
+                    </span>
+
+                    <span>
+                        Evening Lighting
+                    </span>
+
+                    <span>
+                        Architectural Rendering
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- SOFTWARE & TOOLS -->
+
+            <div class="modal-details">
+
+                <div>
+
+                    <strong>
+                        Software & Tools
+                    </strong>
+
+                    <div class="modal-software">
+
+                        <span>
+
+                            <i class="fa-solid fa-cube"></i>
+
+                            Autodesk 3ds Max / SketchUp
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-vr-cardboard"></i>
+
+                            V-Ray / Enscape / Lumion
+
+                        </span>
+
+                        <span>
+
+                            <i class="fa-solid fa-image"></i>
+
+                            Adobe Photoshop
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="https://www.instagram.com/p/DVxr4rkAU72/?igsi=b3h2bnQ0YTE0YjJ3"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-instagram-btn"
+            >
+
+                <i class="fa-brands fa-instagram"></i>
+
+                View Project on Instagram
+
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<!-- AOS Animation Library -->
+
+<script
+    src="https://unpkg.com/aos@2.3.4/dist/aos.js"
+></script>
+
+
+<!-- Main JavaScript -->
 
 <script src="portofolio.js"></script>
 
