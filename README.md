@@ -12,7 +12,10 @@ mohrasyidridha/
 │   └── projects/
 │       ├── pid-water-level.jpg
 │       ├── elevator-system.jpg
-│       └── sorting-station.jpg
+│       ├── sorting-station.jpg
+│       ├── 3d-industrial-design.jpg
+│       ├── 3d-mccafe-kiosk.jpg
+│       └── 3d-al-birqah-islamic-center.jpg
 │
 └── assets/
     ├── CV_Moh_Rasyid_Ridha.pdf
