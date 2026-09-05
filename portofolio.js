@@ -1,10 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* =========================================
-       AOS ANIMATION
-    ========================================= */
+    /* =====================================================
+       MRR ENGINEERING
+       PORTFOLIO JAVASCRIPT
+    ===================================================== */
+
+
+    /* =====================================================
+       01. AOS ANIMATION
+    ===================================================== */
 
     if (typeof AOS !== "undefined") {
+
         AOS.init({
             duration: 700,
             easing: "ease-out",
@@ -12,365 +19,109 @@ document.addEventListener("DOMContentLoaded", () => {
             offset: 80
         });
 
-
-        /* =========================================
-   3D PROJECT MODAL
-========================================= */
-
-const projectModal = document.getElementById("projectModal");
-const projectModalClose = document.getElementById("projectModalClose");
-const projectModalOverlay = document.querySelector(".project-modal-overlay");
-
-const projectDetailButtons = document.querySelectorAll(
-    ".project-detail-btn, .project-detail-trigger"
-);
-
-function openProjectModal() {
-
-    if (!projectModal) return;
-
-    projectModal.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-
-}
-
-function closeProjectModal() {
-
-    if (!projectModal) return;
-
-    projectModal.classList.remove("active");
-
-    document.body.style.overflow = "";
-
-}
-
-projectDetailButtons.forEach((button) => {
-
-    button.addEventListener("click", openProjectModal);
-
-});
-
-if (projectModalClose) {
-
-    projectModalClose.addEventListener(
-        "click",
-        closeProjectModal
-    );
-
-}
-
-if (projectModalOverlay) {
-
-    projectModalOverlay.addEventListener(
-        "click",
-        closeProjectModal
-    );
-
-}
-
-/* Close with ESC */
-
-document.addEventListener("keydown", (event) => {
-
-    if (
-        event.key === "Escape" &&
-        projectModal &&
-        projectModal.classList.contains("active")
-    ) {
-
-        closeProjectModal();
-
-    }
-
-});
-
-
-/* =========================================
-   PROJECT 05 MODAL
-========================================= */
-
-const project05Modal = document.getElementById("project05Modal");
-const project05ModalClose = document.getElementById("project05ModalClose");
-const project05ModalOverlay = project05Modal
-    ? project05Modal.querySelector(".project-modal-overlay")
-    : null;
-
-const project05Buttons = document.querySelectorAll(
-    "#project05Card .project-detail-btn, " +
-    "#project05Card .project-detail-trigger"
-);
-
-function openProject05Modal() {
-    if (!project05Modal) return;
-
-    project05Modal.classList.add("active");
-    document.body.style.overflow = "hidden";
-}
-
-function closeProject05Modal() {
-    if (!project05Modal) return;
-
-    project05Modal.classList.remove("active");
-    document.body.style.overflow = "";
-}
-
-project05Buttons.forEach((button) => {
-    button.addEventListener("click", openProject05Modal);
-});
-
-if (project05ModalClose) {
-    project05ModalClose.addEventListener(
-        "click",
-        closeProject05Modal
-    );
-}
-
-if (project05ModalOverlay) {
-    project05ModalOverlay.addEventListener(
-        "click",
-        closeProject05Modal
-    );
-}
-
-document.addEventListener("keydown", (event) => {
-
-    if (
-        event.key === "Escape" &&
-        project05Modal &&
-        project05Modal.classList.contains("active")
-    ) {
-        closeProject05Modal();
-    }
-
-});
-
-
-/* =========================================
-   PROJECT 06 MODAL
-========================================= */
-
-const project06Modal = document.getElementById("project06Modal");
-
-const project06ModalClose =
-    document.getElementById("project06ModalClose");
-
-const project06ModalOverlay = project06Modal
-    ? project06Modal.querySelector(".project-modal-overlay")
-    : null;
-
-
-/* PROJECT 06 BUTTONS */
-
-const project06Buttons = document.querySelectorAll(
-    "#project06Card .project-detail-btn, " +
-    "#project06Card .project-detail-trigger"
-);
-
-
-/* OPEN MODAL */
-
-function openProject06Modal() {
-
-    if (!project06Modal) return;
-
-    project06Modal.classList.add("active");
-
-    document.body.style.overflow = "hidden";
-}
-
-
-/* CLOSE MODAL */
-
-function closeProject06Modal() {
-
-    if (!project06Modal) return;
-
-    project06Modal.classList.remove("active");
-
-    document.body.style.overflow = "";
-}
-
-
-/* BUTTON EVENT */
-
-project06Buttons.forEach((button) => {
-
-    button.addEventListener(
-        "click",
-        openProject06Modal
-    );
-
-});
-
-
-/* CLOSE BUTTON */
-
-if (project06ModalClose) {
-
-    project06ModalClose.addEventListener(
-        "click",
-        closeProject06Modal
-    );
-
-}
-
-
-/* CLOSE OVERLAY */
-
-if (project06ModalOverlay) {
-
-    project06ModalOverlay.addEventListener(
-        "click",
-        closeProject06Modal
-    );
-
-}
-
-
-/* ESC KEY */
-
-document.addEventListener("keydown", (event) => {
-
-    if (
-        event.key === "Escape" &&
-        project06Modal &&
-        project06Modal.classList.contains("active")
-    ) {
-
-        closeProject06Modal();
-
-    }
-
-});
-
-
     }
 
 
-    /* =========================================
-       MOBILE MENU
-    ========================================= */
+    /* =====================================================
+       02. MOBILE MENU
+    ===================================================== */
 
     const menuToggle = document.querySelector(".menu-toggle");
     const navMenu = document.querySelector(".nav-menu");
     const navLinks = document.querySelectorAll(".nav-link");
 
-    if (menuToggle && navMenu) {
 
-        menuToggle.setAttribute("aria-expanded", "false");
+    function closeMobileMenu() {
 
-        menuToggle.addEventListener("click", () => {
+        if (!navMenu) return;
 
-            navMenu.classList.toggle("active");
+        navMenu.classList.remove("active");
 
-            const isOpen = navMenu.classList.contains("active");
+        if (menuToggle) {
 
             menuToggle.setAttribute(
                 "aria-expanded",
-                isOpen.toString()
+                "false"
             );
 
-            menuToggle.innerHTML = isOpen
-                ? '<i class="fa-solid fa-xmark"></i>'
-                : '<i class="fa-solid fa-bars"></i>';
-        });
+            menuToggle.innerHTML =
+                '<i class="fa-solid fa-bars"></i>';
+        }
+
     }
 
 
-    /* =========================================
-       CLOSE MOBILE MENU
-       WHEN NAVIGATION LINK IS CLICKED
-    ========================================= */
+    function openMobileMenu() {
 
-    navLinks.forEach(link => {
+        if (!navMenu) return;
+
+        navMenu.classList.add("active");
+
+        if (menuToggle) {
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
+            menuToggle.innerHTML =
+                '<i class="fa-solid fa-xmark"></i>';
+        }
+
+    }
+
+
+    if (menuToggle && navMenu) {
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+        );
+
+
+        menuToggle.addEventListener("click", (event) => {
+
+            event.stopPropagation();
+
+            const isOpen =
+                navMenu.classList.contains("active");
+
+
+            if (isOpen) {
+
+                closeMobileMenu();
+
+            } else {
+
+                openMobileMenu();
+
+            }
+
+        });
+
+    }
+
+
+    /* =====================================================
+       03. CLOSE MOBILE MENU
+       WHEN NAVIGATION LINK IS CLICKED
+    ===================================================== */
+
+    navLinks.forEach((link) => {
 
         link.addEventListener("click", () => {
 
-            if (navMenu) {
-                navMenu.classList.remove("active");
-            }
-
-            if (menuToggle) {
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
-
-                menuToggle.innerHTML =
-                    '<i class="fa-solid fa-bars"></i>';
-            }
+            closeMobileMenu();
 
         });
 
     });
 
 
-    /* =========================================
-       FOOTER YEAR
-    ========================================= */
-
-    const yearElement = document.getElementById("year");
-
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-
-    /* =========================================
-       ACTIVE NAVIGATION
-       BASED ON SCROLL POSITION
-    ========================================= */
-
-    const sections = document.querySelectorAll("section[id]");
-
-    function updateActiveNav() {
-
-        const scrollPosition = window.scrollY + 150;
-
-        let currentSection = "";
-
-        sections.forEach(section => {
-
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute("id");
-
-            if (
-                scrollPosition >= sectionTop &&
-                scrollPosition < sectionTop + sectionHeight
-            ) {
-                currentSection = sectionId;
-            }
-
-        });
-
-        navLinks.forEach(link => {
-
-            link.classList.remove("active");
-
-            const linkTarget = link.getAttribute("href");
-
-            if (linkTarget === `#${currentSection}`) {
-                link.classList.add("active");
-            }
-
-        });
-    }
-
-
-    window.addEventListener(
-        "scroll",
-        updateActiveNav,
-        { passive: true }
-    );
-
-    updateActiveNav();
-
-
-    /* =========================================
-       CLOSE MENU WHEN CLICKING OUTSIDE
-    ========================================= */
+    /* =====================================================
+       04. CLOSE MOBILE MENU
+       WHEN CLICKING OUTSIDE
+    ===================================================== */
 
     document.addEventListener("click", (event) => {
 
@@ -382,91 +133,522 @@ document.addEventListener("keydown", (event) => {
         const clickedToggle =
             menuToggle.contains(event.target);
 
+
         if (
             !clickedInsideMenu &&
             !clickedToggle &&
             navMenu.classList.contains("active")
         ) {
 
-            navMenu.classList.remove("active");
+            closeMobileMenu();
 
-            menuToggle.setAttribute(
-                "aria-expanded",
-                "false"
-            );
-
-            menuToggle.innerHTML =
-                '<i class="fa-solid fa-bars"></i>';
         }
 
     });
 
 
-     /* =========================================
-       PROJECT FILTER
-    ========================================= */
+    /* =====================================================
+       05. FOOTER YEAR
+    ===================================================== */
 
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
-
-    const projectItems =
-        document.querySelectorAll(".project");
+    const yearElement =
+        document.getElementById("year");
 
 
-    if (filterButtons.length > 0 &&
-        projectItems.length > 0) {
+    if (yearElement) {
 
-        filterButtons.forEach(button => {
+        yearElement.textContent =
+            new Date().getFullYear();
 
-            button.addEventListener("click", () => {
-
-                /* Remove active from all buttons */
-
-                filterButtons.forEach(btn => {
-                    btn.classList.remove("active");
-                });
+    }
 
 
-                /* Activate clicked button */
+    /* =====================================================
+       06. ACTIVE NAVIGATION
+       BASED ON SCROLL POSITION
+    ===================================================== */
 
-                button.classList.add("active");
-
-
-                /* Get selected filter */
-
-                const filter =
-                    button.dataset.filter;
+    const sections =
+        document.querySelectorAll("section[id]");
 
 
-                /* Show / hide projects */
+    function updateActiveNav() {
 
-                projectItems.forEach(project => {
+        if (!sections.length || !navLinks.length) {
+            return;
+        }
 
-                    const category =
-                        project.dataset.category;
+
+        const scrollPosition =
+            window.scrollY + 150;
 
 
-                    if (
-                        filter === "all" ||
-                        category === filter
-                    ) {
+        let currentSection = "";
 
-                        project.style.display = "grid";
 
-                    } else {
+        sections.forEach((section) => {
 
-                        project.style.display = "none";
+            const sectionTop =
+                section.offsetTop;
 
-                    }
+            const sectionHeight =
+                section.offsetHeight;
 
-                });
+            const sectionId =
+                section.getAttribute("id");
 
-            });
+
+            if (
+                scrollPosition >= sectionTop &&
+                scrollPosition <
+                sectionTop + sectionHeight
+            ) {
+
+                currentSection = sectionId;
+
+            }
+
+        });
+
+
+        navLinks.forEach((link) => {
+
+            link.classList.remove("active");
+
+
+            const linkTarget =
+                link.getAttribute("href");
+
+
+            if (
+                linkTarget ===
+                `#${currentSection}`
+            ) {
+
+                link.classList.add("active");
+
+            }
 
         });
 
     }
 
+
+    window.addEventListener(
+        "scroll",
+        updateActiveNav,
+        { passive: true }
+    );
+
+
+    updateActiveNav();
+
+
+/* =====================================================
+   07. PROJECT FILTER
+===================================================== */
+
+const filterButtons =
+    document.querySelectorAll(".filter-btn");
+
+const projectItems =
+    document.querySelectorAll(".project");
+
+
+if (
+    filterButtons.length > 0 &&
+    projectItems.length > 0
+) {
+
+    filterButtons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            /* -----------------------------------------
+               REMOVE ACTIVE FROM ALL BUTTONS
+            ----------------------------------------- */
+
+            filterButtons.forEach((btn) => {
+
+                btn.classList.remove("active");
+
+            });
+
+
+            /* -----------------------------------------
+               ACTIVATE SELECTED BUTTON
+            ----------------------------------------- */
+
+            button.classList.add("active");
+
+
+            /* -----------------------------------------
+               GET FILTER
+            ----------------------------------------- */
+
+            const filter =
+                button.dataset.filter;
+
+
+            /* -----------------------------------------
+               FILTER PROJECTS
+            ----------------------------------------- */
+
+            projectItems.forEach((project) => {
+
+                const category =
+                    project.dataset.category;
+
+
+                const shouldShow =
+                    filter === "all" ||
+                    category === filter;
+
+
+                if (shouldShow) {
+
+                    project.classList.remove("hidden");
+
+                } else {
+
+                    project.classList.add("hidden");
+
+                }
+
+            });
+
+
+            /* -----------------------------------------
+               REFRESH AOS
+            ----------------------------------------- */
+
+            if (typeof AOS !== "undefined") {
+
+                AOS.refresh();
+
+            }
+
+        });
+
+    });
+
+}
+
+
+    /* =====================================================
+       08. PROJECT MODAL SYSTEM
+    ===================================================== */
+
+    const modalConfigurations = [
+
+        {
+            modalId: "projectModal",
+            closeId: "projectModalClose",
+            cardId: "project04Card"
+        },
+
+        {
+            modalId: "project05Modal",
+            closeId: "project05ModalClose",
+            cardId: "project05Card"
+        },
+
+        {
+            modalId: "project06Modal",
+            closeId: "project06ModalClose",
+            cardId: "project06Card"
+        }
+
+    ];
+
+
+    const activeModals = [];
+
+
+    /* =====================================================
+       OPEN MODAL
+    ===================================================== */
+
+    function openModal(modal) {
+
+        if (!modal) return;
+
+
+        modal.classList.add("active");
+
+
+        document.body.classList.add(
+            "modal-open"
+        );
+
+
+        document.body.style.overflow = "hidden";
+
+
+        activeModals.push(modal);
+
+    }
+
+
+    /* =====================================================
+       CLOSE MODAL
+    ===================================================== */
+
+    function closeModal(modal) {
+
+        if (!modal) return;
+
+
+        modal.classList.remove("active");
+
+
+        const index =
+            activeModals.indexOf(modal);
+
+
+        if (index !== -1) {
+
+            activeModals.splice(index, 1);
+
+        }
+
+
+        /*
+         * Jika tidak ada modal yang masih terbuka,
+         * kembalikan scroll halaman.
+         */
+
+        const anyModalOpen =
+            document.querySelector(
+                ".project-modal.active"
+            );
+
+
+        if (!anyModalOpen) {
+
+            document.body.classList.remove(
+                "modal-open"
+            );
+
+            document.body.style.overflow = "";
+
+        }
+
+    }
+
+
+    /* =====================================================
+       INITIALIZE ALL PROJECT MODALS
+    ===================================================== */
+
+    modalConfigurations.forEach((config) => {
+
+        const modal =
+            document.getElementById(
+                config.modalId
+            );
+
+
+        const closeButton =
+            document.getElementById(
+                config.closeId
+            );
+
+
+        const projectCard =
+            document.getElementById(
+                config.cardId
+            );
+
+
+        if (!modal) return;
+
+
+        /* ---------------------------------------------
+           MODAL OVERLAY
+        --------------------------------------------- */
+
+        const overlay =
+            modal.querySelector(
+                ".project-modal-overlay"
+            );
+
+
+        /* ---------------------------------------------
+           PROJECT DETAIL BUTTONS
+        --------------------------------------------- */
+
+        const detailButtons =
+            projectCard
+                ? projectCard.querySelectorAll(
+                    ".project-detail-btn, " +
+                    ".project-detail-trigger"
+                )
+                : [];
+
+
+        /* ---------------------------------------------
+           OPEN BUTTON
+        --------------------------------------------- */
+
+        detailButtons.forEach((button) => {
+
+            button.addEventListener(
+                "click",
+                (event) => {
+
+                    event.preventDefault();
+
+                    event.stopPropagation();
+
+                    openModal(modal);
+
+                }
+            );
+
+        });
+
+
+        /* ---------------------------------------------
+           CLOSE BUTTON
+        --------------------------------------------- */
+
+        if (closeButton) {
+
+            closeButton.addEventListener(
+                "click",
+                (event) => {
+
+                    event.preventDefault();
+
+                    closeModal(modal);
+
+                }
+            );
+
+        }
+
+
+        /* ---------------------------------------------
+           CLOSE WHEN CLICKING OVERLAY
+        --------------------------------------------- */
+
+        if (overlay) {
+
+            overlay.addEventListener(
+                "click",
+                () => {
+
+                    closeModal(modal);
+
+                }
+            );
+
+        }
+
+    });
+
+
+    /* =====================================================
+       09. ESCAPE KEY
+       CLOSE ACTIVE MODAL
+    ===================================================== */
+
+    document.addEventListener(
+        "keydown",
+        (event) => {
+
+            if (event.key !== "Escape") {
+                return;
+            }
+
+
+            const activeModal =
+                document.querySelector(
+                    ".project-modal.active"
+                );
+
+
+            if (activeModal) {
+
+                closeModal(activeModal);
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       10. PREVENT MODAL CONTENT
+       FROM CLOSING MODAL
+    ===================================================== */
+
+    document
+        .querySelectorAll(".project-modal-content")
+        .forEach((content) => {
+
+            content.addEventListener(
+                "click",
+                (event) => {
+
+                    event.stopPropagation();
+
+                }
+            );
+
+        });
+
+
+    /* =====================================================
+       11. WINDOW RESIZE
+       CLOSE MOBILE MENU ON DESKTOP
+    ===================================================== */
+
+    window.addEventListener(
+        "resize",
+        () => {
+
+            if (
+                window.innerWidth > 768 &&
+                navMenu
+            ) {
+
+                closeMobileMenu();
+
+            }
+
+        }
+    );
+
+
+    /* =====================================================
+       12. INITIAL PAGE STATE
+    ===================================================== */
+
+    /*
+     * Pastikan semua modal dalam keadaan tertutup
+     * ketika halaman pertama kali dibuka.
+     */
+
+    document
+        .querySelectorAll(".project-modal")
+        .forEach((modal) => {
+
+            modal.classList.remove("active");
+
+        });
+
+
+    /*
+     * Pastikan halaman dapat di-scroll.
+     */
+
+    document.body.classList.remove(
+        "modal-open"
+    );
+
+    document.body.style.overflow = "";
+
+
 });
-
-
