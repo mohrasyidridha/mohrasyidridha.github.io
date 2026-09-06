@@ -339,27 +339,51 @@ if (
        08. PROJECT MODAL SYSTEM
     ===================================================== */
 
-    const modalConfigurations = [
+const modalConfigurations = [
 
-        {
-            modalId: "projectModal",
-            closeId: "projectModalClose",
-            cardId: "project04Card"
-        },
+    /* PROJECT 01 */
+    {
+        modalId: "project01Modal",
+        closeId: "project01ModalClose",
+        cardId: "project01Card"
+    },
 
-        {
-            modalId: "project05Modal",
-            closeId: "project05ModalClose",
-            cardId: "project05Card"
-        },
+    /* PROJECT 02 */
+    {
+        modalId: "project02Modal",
+        closeId: "project02ModalClose",
+        cardId: "project02Card"
+    },
 
-        {
-            modalId: "project06Modal",
-            closeId: "project06ModalClose",
-            cardId: "project06Card"
-        }
+    /* PROJECT 03 */
+    {
+        modalId: "project03Modal",
+        closeId: "project03ModalClose",
+        cardId: "project03Card"
+    },
 
-    ];
+    /* PROJECT 04 */
+    {
+        modalId: "projectModal",
+        closeId: "projectModalClose",
+        cardId: "project04Card"
+    },
+
+    /* PROJECT 05 */
+    {
+        modalId: "project05Modal",
+        closeId: "project05ModalClose",
+        cardId: "project05Card"
+    },
+
+    /* PROJECT 06 */
+    {
+        modalId: "project06Modal",
+        closeId: "project06ModalClose",
+        cardId: "project06Card"
+    }
+
+];
 
 
     const activeModals = [];
