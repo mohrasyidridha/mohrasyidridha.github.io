@@ -113,12 +113,14 @@ img {
 .logo {
     display: flex;
     align-items: center;
-
     gap: 10px;
 
-    font-weight: 700;
-    letter-spacing: 0.5px;
+    color: var(--text);
+    text-decoration: none;
 }
+
+
+/* ICON */
 
 .logo-icon {
     width: 34px;
@@ -128,18 +130,22 @@ img {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid var(--border-dark);
-
-    color: var(--accent);
-
-    font-size: 15px;
-
-    flex-shrink: 0;
+    border: 1px solid var(--text);
 }
 
+.logo-icon i {
+    font-size: 16px;
+    color: #008f70;
+}
+
+
+/* TEXT */
+
 .logo-text {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 700;
     letter-spacing: 1px;
+    color: var(--text);
 }
 
 
